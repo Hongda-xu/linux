@@ -35,6 +35,10 @@ public class BaseInterceptor extends HandlerInterceptorAdapter {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		interceptorHookManager.preHandle(request, response, handler);
 		return true;
+
+
+
+
 	}
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
